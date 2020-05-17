@@ -16,24 +16,30 @@ const App = () => {
           avatar={faker.image.avatar()}
         />
       </ApprovalCard>
-      <CommentDetail
-        author="Shairah"
-        timeAgo="Today at 5:23 AM"
-        commentText={faker.lorem.words()}
-        avatar={faker.image.avatar()}
-      />
-      <CommentDetail
-        author="Hamzah"
-        timeAgo="Yesterday at 11.20 PM"
-        commentText={faker.lorem.words()}
-        avatar={faker.image.avatar()}
-      />
-      <CommentDetail
-        author="Umar"
-        timeAgo="Yesterday at 9:55 PM"
-        commentText={faker.lorem.words()}
-        avatar={faker.image.avatar()}
-      />
+      <ApprovalCard>
+        <CommentDetail
+          author="Shairah"
+          timeAgo="Today at 5:23 AM"
+          commentText={faker.lorem.words()}
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="Hamzah"
+          timeAgo="Yesterday at 11.20 PM"
+          commentText={faker.lorem.words()}
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="Umar"
+          timeAgo="Yesterday at 9:55 PM"
+          commentText={faker.lorem.words()}
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
     </div>
   )
 }
